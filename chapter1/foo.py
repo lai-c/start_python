@@ -4,3 +4,4 @@ class Foo:
 
 for a in xrange(10):
     print a
+    
