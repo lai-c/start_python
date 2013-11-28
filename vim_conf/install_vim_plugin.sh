@@ -32,7 +32,7 @@ git clone https://github.com/kien/ctrlp.vim.git
 cd ~/.vim/bundle                                                              
 git clone git://github.com/davidhalter/jedi-vim.git 
 cd jedi-vim
-git submodule update --init
+sudo pip install jedi
 
 # =============
 # Python folding                                                                
@@ -51,4 +51,12 @@ cd pyflakes-vim
 git submodule init
 git submodule update
 
+
+# =============
+# vim-flake8
+# check python syntax error 
+# =============
+cd ~/.vim/bundle
+git clone https://github.com/nvie/vim-flake8.git
+sudo pip install flake8
 

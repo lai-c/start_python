@@ -210,3 +210,5 @@ let g:syntastic_mode_map = {
             \ 'passive_filetypes': ['html', 'haskell', 'python']
             \}
 
+" vim-flake8
+nnoremap  l :call Flake8()<CR>
