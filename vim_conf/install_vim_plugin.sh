@@ -51,7 +51,6 @@ cd pyflakes-vim
 git submodule init
 git submodule update
 
-
 # =============
 # vim-flake8
 # check python syntax error 
@@ -59,4 +58,10 @@ git submodule update
 cd ~/.vim/bundle
 git clone https://github.com/nvie/vim-flake8.git
 sudo pip install flake8
+
+# =============
+# indent guides
+# =============
+cd ~/.vim/bundle
+git clone git://github.com/nathanaelkane/vim-indent-guides.git
 
