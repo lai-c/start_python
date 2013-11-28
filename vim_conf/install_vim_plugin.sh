@@ -31,12 +31,24 @@ git clone https://github.com/kien/ctrlp.vim.git
 # =============
 cd ~/.vim/bundle                                                              
 git clone git://github.com/davidhalter/jedi-vim.git 
-sudo pip install jedi
+cd jedi-vim
+git submodule update --init
 
 # =============
 # Python folding                                                                
 # =============
 mkdir -p ~/.vim/ftplugin                                                      
 wget -O ~/.vim/ftplugin/python_editing.vim http://www.vim.org/scripts/download_script.php?src_id=5492
+
+
+# =============
+# pyflakes-vim
+# check python syntax error 
+# =============
+cd ~/.vim/bundle
+git clone https://github.com/kevinw/pyflakes-vim.git
+cd pyflakes-vim
+git submodule init
+git submodule update
 
 

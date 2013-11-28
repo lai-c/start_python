@@ -1,4 +1,4 @@
-from urlparse import urljoin
+from urlparse import _splitparams
 
 def print_twitter_url():
     print urljoin('http://www.twitter.com', 'mbrochh')
