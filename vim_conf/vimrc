@@ -72,6 +72,23 @@ vnoremap > >gv  " better indentation
 "" autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 "" au InsertLeave * match ExtraWhitespace /\s\+$/
 
+" Q: Cannot load colorscheme when reloading .vimrc.                                   
+" https://github.com/Shougo/neobundle.vim/issues/157                                  
+" A: You must write :NeoBundle lines before filetype plugin indent on and syntax  
+" enable. 
+" vim php manul
+" https://github.com/thinca/vim-ref.git
+" sudo port install lynx
+" lynx is necessary
+if has('vim_starting')
+    set nocompatible               " Be iMproved
+    set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
+" NeoBundle 'thinca/vim-ref'
+let g:ref_phpmanual_path = $HOME . '/.vim/refs/php-chunked-xhtml'
+
+
+
 
 " Color scheme
 " mkdir -p ~/.vim/colors && cd ~/.vim/colors
@@ -256,3 +273,6 @@ function! s:SET_TAGS()
 autocmd BufEnter * call s:SET_TAGS()
 "------------------------------------------------------------------------------
 set gfn=Source\ Code\ Pro:h13
+
+
+
