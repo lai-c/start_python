@@ -220,7 +220,7 @@ function! InitPython()
     " cd ~/.vim/bundle
     " git clone https://github.com/nvie/vim-flake8.git
     " sudo pip install flake8
-    nnoremap  l :call Flake8()<CR>
+    nnoremap  <C-l> :call Flake8()<CR>
 
 endfunction
 
