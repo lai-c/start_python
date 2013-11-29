@@ -80,14 +80,12 @@ vnoremap > >gv  " better indentation
 " https://github.com/thinca/vim-ref.git
 " sudo port install lynx
 " lynx is necessary
-if has('vim_starting')
-    set nocompatible               " Be iMproved
-    set runtimepath+=~/.vim/bundle/neobundle.vim/
-endif
-" NeoBundle 'thinca/vim-ref'
+set nocompatible               " Be iMproved
+set runtimepath+=~/.vim/bundle/neobundle.vim/
+call neobundle#rc(expand('~/.vim/bundle/'))
+" NeoBundle 'vim-ref'
 let g:ref_phpmanual_path = $HOME . '/.vim/refs/php-chunked-xhtml'
-
-
+let g:ref_phpmanual_cmd = 'lynx -dump -nonumbers %s'
 
 
 " Color scheme
@@ -273,6 +271,4 @@ function! s:SET_TAGS()
 autocmd BufEnter * call s:SET_TAGS()
 "------------------------------------------------------------------------------
 set gfn=Source\ Code\ Pro:h13
-
-
 
