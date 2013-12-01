@@ -1,24 +1,27 @@
 from urlparse import urljoin
 
+
 def fold_this():
-    #"""We cen fold and unfold code blocks by pressing ``f``."""
+    """We cen fold and unfold code blocks by pressing ``f``."""
     print 'Fold it'
-    
+
 
 def fold_all():
-    #"""we can fold and unfold everything by pressing ``F``.""""
+    """we can fold and unfold everything by pressing ``F``."""
     print 'Fold all'
 
 
 def create_ropeproject():
-    #"""we can create a ropeproject by excuting ``:RopeOpenProject``."""
+    """we can create a ropeproject by excuting ``:RopeOpenProject``."""
     print 'Now add your venv to ``.ropeproject/config.py``!'
     movies = ['a', 'b', 'c']
+    print movies
+
 
 def life_syntax_checking():
     """Pylint checks our code on each save"""
     # try to uncomment this and save
-    abc = 5 # Try to uncomment this line and save
+    # abc = 5  # Try to uncomment this line and save
     # Now fix all reported issues!
     # You can move down into the Quickfix window with ``<C-w><C-w>``
     # You can navigate up and down in that windown with ``j`` and ``k``
@@ -33,13 +36,13 @@ def code_completion():
     #.i.e. Type ``li`` and then press ``<C-SPACE>``
     #You can navigate between then found choices by holding ``CTRL`` and using
     #``j`` and ``k``
-    movie = ['a', 'b', 'c']
+    #movie = ['a', 'b', 'c']
     #Try to import something from utils
     #i.e. Type ``from utils import`` and then press ``<C-SPACE>``
 
 
 def print_twitter_url():
-    """``, + d`` go to the defition, ``, + g`` go to the assignment
+    """``, + d`` go to the defition, ``, + g`` go to the assignment"""
     print urljoin('http://www.twitter.com', 'mbrochh')
 
 
