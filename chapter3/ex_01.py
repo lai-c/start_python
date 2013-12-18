@@ -12,7 +12,8 @@ print data.readline()
 data.seek(0)
 print "Hi:"
 for each_line in data:
-    (role, line_spoken) = each_line.split(':', 1)
-    print "%s said:%s" % (role, line_spoken)
+    if each_line.find(":") != -1:
+        (role, line_spoken) = each_line.split(':', 1)
+        print "%s said:%s" % (role, line_spoken)
 
 data.close()
